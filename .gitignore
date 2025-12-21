@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.env
+
+# Django
+db.sqlite3
+staticfiles/
+
+# ML artifacts
+*.h5
+*.pkl
+*.joblib
+ml/artifacts/
+
+# Logs
+*.log
+
+# IDEs / Editors
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# uv
+.uv/
+
+# Cache
+.cache/
