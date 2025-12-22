@@ -1,10 +1,17 @@
-import ml.data as data_module
-import ml.baselines as baselines
+import server.ml.data as data_module
+import server.ml.baselines as baselines
+from server.ml.training import run_model_building
+
+MODEL_TRAINING = False
 
 def main():
-    # data_module.main()
 
-    baselines.main()
+    if MODEL_TRAINING:
+        data_module.main()
+        baselines.main()
+        run_model_building()
+
+    
 
 
 if __name__ == "__main__":
