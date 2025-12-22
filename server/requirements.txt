@@ -1,0 +1,8 @@
+django
+djangorestframework
+gunicorn
+numpy
+pandas
+yfinance
+torch          # or tensorflow
+django-cors-headers
