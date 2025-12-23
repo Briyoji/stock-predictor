@@ -1,0 +1,53 @@
+.predict-panel {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #1e293b;
+}
+
+.lookback-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.lookback-selector button {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #9ca3af;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.lookback-selector button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.predict-btn {
+  margin-top: 0.75rem;
+  padding: 0.6rem 1rem;
+  width: 100%;
+  background: #16a34a;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.predict-btn:disabled {
+  opacity: 0.6;
+}
+
+.prediction-result {
+  margin-top: 1rem;
+}
+
+.up {
+  color: #22c55e;
+}
+
+.down {
+  color: #ef4444;
+}

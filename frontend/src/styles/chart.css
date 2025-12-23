@@ -1,0 +1,28 @@
+.range-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.range-selector button {
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #9ca3af;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.range-selector button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+.chart-container {
+  height: 320px;
+}
+
+.chart-placeholder {
+  height: 320px;
+}
