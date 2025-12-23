@@ -72,6 +72,7 @@ def get_historical_prices(ticker: str, range_key: str):
         end=end.strftime("%Y-%m-%d"),
         interval="1d",
         progress=False,
+        auto_adjust=False,
     )
 
     if df.empty:
@@ -80,7 +81,7 @@ def get_historical_prices(ticker: str, range_key: str):
     prices = [
         {
             "date": idx.date().isoformat(),
-            "close": round(float(row["Close"]), 2),
+            "close": round(float(row["Close"].iloc[0]), 2)
         }
         for idx, row in df.iterrows()
     ]
